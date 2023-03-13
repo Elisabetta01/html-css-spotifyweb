@@ -19,6 +19,7 @@
                <aside class="sidebar flex column space-between">
                     <div class="">
                          <img src="./assets/img/logo.svg" alt="" class="logo">
+                         <img src="./assets/img/logo-small.svg" alt="" class="logo-small">
                          <ul>
                               <li class="relative">
                                    <img src="./assets/img/home.svg" alt="">
@@ -35,13 +36,14 @@
                                    <a href="">La tua libreria</a>
                               </li>
           
+                         <ul class="playlist">
                               <li><h4 class="color-white">PLAYLIST</h4></li>
-          
+               
                               <li>
                                    <i class="fa-solid fa-square-plus"></i>
                                    <a href="" class="vertical-align">Crea Playlist</a>
                               </li>
-                              
+                                   
                               <li><a href="">Nome Playlist</a></li>
                               <li><a href="">Nome Playlist</a></li>
                               <li><a href="">Nome Playlist</a></li>
@@ -49,11 +51,13 @@
                               <li><a href="">Nome Playlist</a></li>
                               <li><a href="">Nome Playlist</a></li>
                               <li><a href="">Nome Playlist</a></li>
+
+                         </ul>
                          </ul>
                     </div>
      
                     <div>
-                         <div class="padding-bottom-5">
+                         <div class="padding-bottom-5 download">
                               <i class="fa-regular fa-circle-down color-grey"></i>
                               <a href="" >Installa app</a>
      
@@ -61,7 +65,7 @@
                          
                          <hr>
      
-                         <div class="padding-top-5">
+                         <div class="padding-top-5 profile">
                               <span class="img-profile">
                                    <img src="./assets/img/profile.svg" alt="" >
                               </span>
@@ -202,20 +206,22 @@
                          <i class="fa-solid fa-rotate-right"></i>
                     </div>
                     
-                    <div id="footer">
+                    <div id="footer-center" class="flex">
                          <span>0:25</span>
-                         <span>
-                              <input type="range" class="slider">
-                         </span>
+                         <div class="time-bg">
+                              <div class="time"></div>
+                         </div>
                          <span>4:35</span>
                     </div>
                </div>
 
-               <div id="footer">
+               <div id="footer-last" class="flex">
                     <i class="fa-solid fa-list-ul"></i>
                     <i class="fa-solid fa-tv"></i>
                     <i class="fa-solid fa-volume-high"></i>
-                    <input type="range">
+                    <div class="time-small-bg">
+                         <div class="time"></div>
+                    </div>
 
                </div>
 
