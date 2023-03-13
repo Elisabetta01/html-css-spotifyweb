@@ -122,6 +122,10 @@ main{
      height: calc(100% - 80px);
 }
 
+.nav li{
+     margin: 15px;
+}
+
 .underline:hover{
      text-decoration: underline;
 }
@@ -153,8 +157,7 @@ main{
      font-size: 10px;
 }
 
-.nav{
-     padding: 10px 0;
+.nav li a{
      font-size: small;
 }
 
@@ -162,6 +165,7 @@ main{
      display: flex;
      justify-content: space-between;
      align-items: baseline;
+     flex-wrap: wrap;
      padding: 15px;
 }
 
@@ -232,7 +236,7 @@ h6{
      background-color: rgba(40,40,40,255);
 }
 
-#footer div, #footer>i, #footer span, .nav li a{
+#footer div, #footer>i, #footer span{
      padding: 0 10px;
 }
 
@@ -252,9 +256,17 @@ h6{
      font-size: 30px;
 }
 
+.wrap{
+     flex-wrap: wrap;
+}
 
-@media screen and(max-width: 1024px) {
 
+@media screen and (max-width: 992px) {
+
+     .container-album{
+          flex-basis: calc(100% / 4 - 1%);
+     }
+          
 }
 
 @media screen and(max-width: 768px) {
